@@ -4,6 +4,8 @@
 /*** 
  * `quotes` array 
 ***/
+
+//Quotes array taken from a github repo
 const quotes = [
     {
         "quote": "Life isn’t about getting and having, it’s about giving and being.",
@@ -443,8 +445,8 @@ function getRandomQuote() {
 /***
  * `printQuote` function
 ***/
-const quoteArea = document.getElementById('quote');
-const source = document.getElementById('source');
+const quoteArea = document.getElementById('quote');     //Targets the quote element
+const source = document.getElementById('source');       //Targets the source element
 // const citationArea = document.getElementById('citation');
 // const yearArea = document.getElementById('year');
 
@@ -458,7 +460,7 @@ function printQuote() {
     // source[1].innerText = "github.com/nasrulhasim";
     // source[2].innerHTML = "";
 
-    source.innerHTML = `${author}<span class="citation" id="citation">github.com/nasrulhasim</span>`
+    source.innerHTML = `${author}<span class="citation" id="citation">github.com/nasrulhasim</span>`        //Changing the innerHTML of the source element to display the author and citation
 }
 
 /***
@@ -467,4 +469,4 @@ function printQuote() {
 
 ***/
 
-document.getElementById('load-quote').addEventListener("click", printQuote);
+document.getElementById('load-quote').addEventListener("click", printQuote);        //Adding onClick event listener for the load-quote button
